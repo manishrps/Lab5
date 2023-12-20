@@ -17,7 +17,7 @@
         },
         "identityProviders": {
             "type": "array",
-            "defaultValue": [ "AzureActiveDirectory" ]
+            "defaultValue": ["AzureActiveDirectory", "ActiveDirectory"]
         },
         "enableDiagnostics": {
             "type": "bool",
@@ -37,9 +37,9 @@
             "apiVersion": "2022-12-01-preview",
             "name": "EntityAnalytics1",
             "kind": "EntityAnalytics",
-            "scope": "[concat('Microsoft.OperationalInsights/workspaces/', parameters('workspaceName'))]",
+            "scope": "[parameters('workspaceName')]",
             "properties": {
-                "entityProviders": ["AzureActiveDirectory"]
+                "entityProviders": ["AzureActiveDirectory","ActiveDirectory"]
             }
         },
         {
