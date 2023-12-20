@@ -124,7 +124,7 @@
             "metadata": {
                 "description": "Array of identity providers to be synched with UEBA. Valid identity providers are 'ActiveDirectory' and 'AzureActiveDirectory'"
             },
-            "defaultValue": ["AzureActiveDirectory"]
+            "defaultValue": ["AzureActiveDirectory", "ActiveDirectory"]
         },
         "enableDiagnostics": {
             "type": "bool"
@@ -222,7 +222,7 @@
                         "value": "[parameters('enableUeba')]"
                     },
                     "identityProviders": {
-                        "value": ["AzureActiveDirectory"]
+                        "value": ["AzureActiveDirectory","ActiveDirectory"]
                     },
                     "enableDiagnostics": {
                         "value": "[parameters('enableDiagnostics')]"
