@@ -222,7 +222,7 @@
                         "value": "[parameters('enableUeba')]"
                     },
                     "identityProviders": {
-                        "value": "[parameters('identityProviders')]"
+                        "value": "AzureActiveDirectory"
                     },
                     "enableDiagnostics": {
                         "value": "[parameters('enableDiagnostics')]"
