@@ -37,7 +37,7 @@
             "apiVersion": "2022-12-01-preview",
             "name": "EntityAnalytics",
             "kind": "Ueba",
-            "scope": "[concat('Microsoft.OperationalInsights/workspaces/', parameters('workspaceName'))]",
+            "scope": "[]",
             "properties": {
                 "entityProviders": ["AzureActiveDirectory","ActiveDirectory"]
             }
