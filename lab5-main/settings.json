@@ -36,7 +36,7 @@
             "type": "Microsoft.SecurityInsights/settings",
             "apiVersion": "2022-12-01-preview",
             "name": "EntityAnalytics",
-            "kind": "Ueba",
+            "kind": "EntityAnalytics",
             "scope": "[]",
             "properties": {
                 "entityProviders": ["AzureActiveDirectory","ActiveDirectory"]
