@@ -8,6 +8,15 @@
                 "description": "Name for the Log Analytics workspace"
             }
         },
+        "tenantId": {
+                        "value": "[subscription().tenantId]"
+                    },
+                    "subscriptionId": {
+                        "value": "[subscription().subscriptionId]"
+                    },
+                    "location": {
+                        "value": "[parameters('location')]"
+                    },
         "enableUeba": {
             "type": "bool",
             "metadata": {
