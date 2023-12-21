@@ -227,18 +227,6 @@
                     "enableDiagnostics": {
                         "value": "[parameters('enableDiagnostics')]"
                     }
-                    "workspaceName": {
-                        "value": "[parameters('workspaceName')]"
-                    },
-                    "tenantId": {
-                        "value": "[subscription().tenantId]"
-                    },
-                    "subscriptionId": {
-                        "value": "[subscription().subscriptionId]"
-                    },
-                    "location": {
-                        "value": "[parameters('location')]"
-                    }
                 }
             }
         },
