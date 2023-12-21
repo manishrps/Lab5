@@ -35,9 +35,9 @@
             "condition": "[parameters('enableUeba')]",
             "type": "Microsoft.SecurityInsights/settings",
             "apiVersion": "2022-12-01-preview",
-            "name": "EntityAnalytics1",
-            "kind": "EntityAnalytics",
-            "scope": "[parameters('workspaceName')]",
+            "name": "EntityAnalytics",
+            "kind": "Ueba",
+            "scope": "[concat('Microsoft.OperationalInsights/workspaces/', parameters('workspaceName'))]",
             "properties": {
                 "entityProviders": ["AzureActiveDirectory","ActiveDirectory"]
             }
