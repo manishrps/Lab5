@@ -37,7 +37,7 @@
             "apiVersion": "2022-12-01-preview",
             "name": "EntityAnalytics",
             "kind": "EntityAnalytics",
-            "scope": "[]",
+            "scope": "[[parameters('workspaceName')]]",
             "properties": {
                 "entityProviders": ["AzureActiveDirectory","ActiveDirectory"]
             }
